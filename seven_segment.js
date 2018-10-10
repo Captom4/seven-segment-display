@@ -2,7 +2,7 @@ var fs = require('fs');
 var words = fs.readFileSync('words.txt').toString();
 words = words.split("\n");
 
-var badLetters = /[gkmqvwxz]/;
+var badLetters = /[gkmqvwxzio]/;
 var longestAcceptableWord = "";
 
 for(var testWord of words) {
